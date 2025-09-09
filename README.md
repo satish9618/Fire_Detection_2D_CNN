@@ -15,7 +15,6 @@ A **Convolutional Neural Network (CNN)** built with **TensorFlow/Keras** to clas
 ---
 
 ## 🧠 2D CNN Architecture
-## 🧠 2D CNN Architecture
 ```mermaid
 graph TD
     A[Input Image<br>128x128x3] --> B[Conv2D<br>32 filters, 3x3]
