@@ -14,30 +14,29 @@ This project shows how deep learning can be applied for **early fire detection**
 
 ---
 
-## 🧠 2D CNN Architecture  
+---
 
-The CNN is designed to learn spatial patterns (flames, smoke textures, fire shapes) from images.  
+## 🧠 2D CNN Architecture (Mind Map)
 
-**Architecture Flow:**  
-
-Input (128x128x3 RGB Image)
-↓
-Conv2D (32 filters, 3×3) + ReLU
-↓
-MaxPooling (2×2)
-↓
-Conv2D (64 filters, 3×3) + ReLU
-↓
-MaxPooling (2×2)
-↓
-Flatten
-↓
-Dense (128 neurons, ReLU)
-↓
-Dropout (0.5)
-↓
-Dense (2 neurons, Softmax)
-
+```mermaid
+mindmap
+  root((Input Image 128x128x3))
+    Convolution
+      "Conv2D (32 filters, 3×3)"
+      "ReLU Activation"
+    Pooling
+      "MaxPooling (2×2)"
+    Convolution
+      "Conv2D (64 filters, 3×3)"
+      "ReLU Activation"
+    Pooling
+      "MaxPooling (2×2)"
+    Dense Layers
+      Flatten
+      "Dense (128 neurons, ReLU)"
+      "Dropout (0.5)"
+      "Dense (2 neurons, Softmax)"
+---
 
 🔹 **Activation**: ReLU (hidden layers), Softmax (output layer)  
 🔹 **Loss Function**: Categorical Crossentropy  
